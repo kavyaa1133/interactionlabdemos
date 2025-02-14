@@ -1,0 +1,88 @@
+body {
+    background-color: #F5F5DC;
+}
+
+/* Use these classes to style the .card component */
+
+.card {
+    background-color: #DEB887;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card__title {
+    font-family: "harpagan", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+.card__excerpt {
+    font-family: "catalpa", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.card__image {
+    width: 1300px;
+    length: 1330px;
+    margin-bottom: 10px;
+}
+.card__more {
+    font-family: "catalpa", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 14px;
+    margin-left: 40px;
+    text-align: justify;
+    text-decoration: underline;
+}
+
+.card__more:hover {
+    color: white;
+    font-size: 16px;
+}
+
+.card__more:active {
+    background-color: black;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        padding: 30px;
+        margin-bottom: 15px;
+    }
+    .card__title {
+        font-size: 55px;
+        margin-bottom: 16px;
+    }
+    .card__excerpt {
+        font-size: 23px;
+    }
+    .card__image {
+        width: 1500px;
+        height: auto; /* Use height instead of 'length' */
+        margin-bottom: 15px;
+    }
+    .card__more {
+        font-size: 16px;
+        margin-left: 50px;
+    }
+    .card__more:hover {
+        font-size: 18px;
+    }
+}
+
+/* You can leave everything below as is — we'll explain flexbox in a later lecture! */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 8vw;
+}
